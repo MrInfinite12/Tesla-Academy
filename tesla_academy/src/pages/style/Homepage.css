@@ -1,0 +1,63 @@
+.banner {
+    background-image: url('https://imgs.search.brave.com/ZEZp68lpORjXVJbYarVsnhRLGsdmDesj0uS6wIc5AoQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by92/aWV3LXlvdW5nLXN0/dWRlbnRzLWF0dGVu/ZGluZy1zY2hvb2xf/MjMtMjE1MDkxMTU2/NS5qcGc_c2l6ZT02/MjYmZXh0PWpwZw');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #666;
+}
