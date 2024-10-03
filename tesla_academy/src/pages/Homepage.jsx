@@ -1,5 +1,4 @@
 import React from "react";
-import './style/Homepage.css'
 import Banner from "../components/Banner";
 import Courses from "../components/Courses";
 import About from "../components/About";

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/Courses.css";
 
 const Courses = () => {
     const courses = [
@@ -9,14 +8,14 @@ const Courses = () => {
     ];
 
     return (
-        <section id="courses" className="courses">
-            <h2>Our Courses</h2>
-            <div className="course-list">
+        <section id="courses" className="py-12 bg-gray-100">
+            <h2 className="text-4xl font-bold text-center mb-10">Our Courses</h2>
+            <div className="container mx-auto flex flex-wrap justify-center gap-6 px-4">
                 {courses.map((course, index) => (
-                    <div key={index} className="course-card">
-                        <img src={course.img} alt={course.title} />
-                        <h3>{course.title}</h3>
-                        <p>{course.description}</p>
+                    <div key={index} className="bg-white border border-gray-300 p-4 rounded-lg shadow hover:shadow-lg transition">
+                        <img src={course.img} alt={course.title} className="w-full h-48 object-cover mb-4 rounded-t-lg" />
+                        <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
+                        <p className="text-gray-600">{course.description}</p>
                     </div>
                 ))}
             </div>
