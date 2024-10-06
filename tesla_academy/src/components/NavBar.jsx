@@ -24,7 +24,7 @@ const NavBar = () => {
         <li className='p-4'>Contact</li>
       </ul>
 
-      <button className='m-1 w-auto bg-black text-white rounded-full p-2'>
+      <button className='hidden md:flex m-1 w-auto bg-black text-white rounded-full p-2'>
         Login/Register
       </button>
 
@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%] '} >
         <img src={logo} alt='logo' className='h-20 w-20 '/>
         <ul className='p-4 uppercase'>
-          <li>Login/Register</li>
+          <li className='p-4 border-b border-gray-600'>Login/Register</li>
           <li className='p-4 border-b border-gray-600'>Courses</li>
           <li className='p-4 border-b border-gray-600'>Forum</li>
           <li className='p-4 border-b border-gray-600'>About Us</li>
