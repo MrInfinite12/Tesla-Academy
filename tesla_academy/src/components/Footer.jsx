@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6">
             <div className="container mx-auto text-center">
-                <p className="mb-4">&copy; 2023 Tesla^Academy. All rights reserved.</p>
+                <p className="mb-4">&copy; 2023 Tesla Academy. All rights reserved.</p>
                 <ul className="flex justify-center space-x-6">
                     <li>
                         <a href="#facebook" className="hover:text-blue-400 transition">Facebook</a>

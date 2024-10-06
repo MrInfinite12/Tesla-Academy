@@ -1,16 +1,18 @@
 import React from "react";
-import Banner from "../components/Banner";
+import NavBar from "../components/NavBar";
+import Hero from "../components/Hero";
 import Courses from "../components/Courses";
-import About from "../components/About";
-import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
     return (
         <div>
-            <Banner />
-            <Courses />
-            <About />
-            <Testimonials />
+            <div>
+                <NavBar/>
+                <Hero />
+                <Courses />
+                <Footer />
+            </div>
         </div>
     );
 };
