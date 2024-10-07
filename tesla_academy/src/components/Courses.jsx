@@ -4,16 +4,16 @@ const Courses = () => {
     const courseData = {
         "10th Standard": [
             { title: "Mathematics", description: "Comprehensive Mathematics Course.", img: "https://img.freepik.com/free-vector/math-chalkboard-background_23-2148152441.jpg?size=626&ext=jpg" },
-            { title: "Science", description: "Explore Physics, Chemistry, and Biology.", img: "science.jpg" },
+            { title: "Science", description: "Explore Physics, Chemistry, and Biology.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3BLCUjWHRGEpaRywmhxKA_Nk64lO8eNEiHQ&s" },
             { title: "Social Studies", description: "Understand history, geography, and civics.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufHxyouqGOr-mDlQ3DLHM_KHwgLZT0bL4yw&s" }
         ],
         "11th Standard": [
-            { title: "Physics", description: "Advanced concepts in Physics.", img: "physics.jpg" },
-            { title: "Chemistry", description: "In-depth study of Chemical reactions.", img: "chemistry.jpg" },
-            { title: "Mathematics", description: "Higher-level Mathematics for 11th grade.", img: "maths11.jpg" }
+            { title: "Physics", description: "Advanced concepts in Physics.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdB4MAcPCvkev9HHe-Hizm5UDtFhbQYN_KQ&s" },
+            { title: "Chemistry", description: "In-depth study of Chemical reactions.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUdweuXZ0DAgxuXhmvUKOXoJvG8In9KQnsQ&s" },
+            { title: "Mathematics", description: "Higher-level Mathematics for 11th grade.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUnftD70oeohBxui2MnojZH2AG4FlUnKjJA&s" }
         ],
         "Web Developers Options": [
-            { title: "Web Development", description: "Make good web interface", img: "s.jpg" }
+            { title: "Web Development", description: "Make good web interface", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVn1FwPcoPoNAlT_PE8eLts7pcl_WHOKvvHw&s" }
         ],
     };
 
