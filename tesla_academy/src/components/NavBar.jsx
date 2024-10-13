@@ -22,7 +22,7 @@ const NavBar = () => {
         <li className='p-4'><Link to="/courses">Courses</Link></li>
         <li className='p-4'>Forum</li>
         <li className='p-4'>About Us</li>
-        <li className='p-4'>Contact</li>
+        <li className='p-4'><Link to="/contact">Contact</Link></li>
       </ul>
 
       <Link to="/login">
@@ -42,7 +42,8 @@ const NavBar = () => {
           <li className='p-4 border-b border-gray-600'><Link to="/courses">Courses</Link></li>
           <li className='p-4 border-b border-gray-600'>Forum</li>
           <li className='p-4 border-b border-gray-600'>About Us</li>
-          <li className='p-4 border-b border-gray-600'>Contact</li>
+          <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
+
         </ul>
       </div>
     </div>
