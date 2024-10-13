@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Contact= () => {
   return (
-    <div className="flex items-center justify-center min-h-screen"
+    <div className="flex items-center justify-center h-screen bg-cover"
     style={{
         backgroundImage: "url('https://viditrade.com/wp-content/uploads/2022/04/login-pg-img.jpg')",
       }}
