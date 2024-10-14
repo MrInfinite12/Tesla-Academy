@@ -20,8 +20,13 @@ const NavBar = () => {
       <ul className='hidden md:flex text-black'>
         <li className='p-4'>Courses</li>
         <li className='p-4'>Forum</li>
+<<<<<<< Updated upstream
         <li className='p-4'>About Us</li>
         <li className='p-4'>Contact</li>
+=======
+        <li className='p-4'><Link to="/about">About Us</Link></li>
+        <li className='p-4'><Link to="/contact">Contact</Link></li>
+>>>>>>> Stashed changes
       </ul>
 
       <button className='hidden md:flex m-1 w-auto bg-black text-white rounded-full p-2'>
@@ -38,8 +43,14 @@ const NavBar = () => {
           <li className='p-4 border-b border-gray-600'>Login/Register</li>
           <li className='p-4 border-b border-gray-600'>Courses</li>
           <li className='p-4 border-b border-gray-600'>Forum</li>
+<<<<<<< Updated upstream
           <li className='p-4 border-b border-gray-600'>About Us</li>
           <li className='p-4 border-b border-gray-600'>Contact</li>
+=======
+          <li className='p-4 border-b border-gray-600'><Link to="/about">About Us</Link></li>
+          <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
+
+>>>>>>> Stashed changes
         </ul>
       </div>
     </div>
