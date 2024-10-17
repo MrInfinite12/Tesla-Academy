@@ -1,5 +1,5 @@
 import React from "react";
-import Courses  from "../components/Courses";
+import Forum  from "../components/Forum";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
@@ -7,7 +7,7 @@ const CoursesPage = () => {
     return (
         <div>
             <NavBar />
-            <Courses />
+            <Forum />
             <Footer />
         </div>
     );
