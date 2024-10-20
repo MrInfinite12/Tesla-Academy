@@ -19,6 +19,10 @@ const Hero = () => {
                     <h1 className='md:text-7xl sm:text-6xl text-4xl p-2 font-bold  text-left'>
                         Tesla Academy.
                     </h1>
+
+                    <div className='mt-4'>
+                        <ReactTyped strings={['SCIENCE...', 'MATHEMATICS...', 'SOCIAL STUDIES...']} className="md:text-3xl sm:text-2xl text-2xl p-2 font-bold text-teal-500 text-left"typeSpeed={50} backSpeed={80} loop />
+                    </div>
                     
                     <div className="flex justify-end">
                       <img
@@ -26,13 +30,7 @@ const Hero = () => {
                       alt="Description of the image"
                       className="w-4/2 " // Increase size and add shadow
  />
-        </div>
-                </div>
-
-                <div className='mt-4'>
-                    <p className='md:text-5xl sm:text-4xl text-xl font-bold  text-left'>
-                    </p>
-                    <ReactTyped strings={['SCIENCE', 'MATHEMATICS', 'SOCIAL STUDIES']} className="md:text-5xl sm:text-4xl text-2xl p-2 font-bold text-black text-left"typeSpeed={40} backSpeed={50} loop />
+        </div>             
                 </div>
             </div>
         </div> 

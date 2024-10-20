@@ -54,7 +54,7 @@ const Forum = () => {
             <button
               key={category.id}
               onClick={() => handleCategoryClick(category)}
-              className="bg-blue-900 text-white p-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300"
+              className="bg-indigo-600 text-white p-6 rounded-lg shadow-lg hover:bg-indigo-800 transition duration-300"
             >
               <h2 className="text-2xl font-semibold">{category.name}</h2>
             </button>
@@ -108,7 +108,7 @@ const Forum = () => {
             />
             <button
               onClick={handleAddComment}
-              className="bg-blue-900 text-white p-3 rounded-lg"
+              className="bg-teal-500 text-white p-3 rounded-lg"
             >
               Post Comment
             </button>
