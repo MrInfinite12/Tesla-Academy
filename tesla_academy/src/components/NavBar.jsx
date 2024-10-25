@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { HoverBorderGradient } from './HoverBorderGradient'; // Assuming you saved the gradient component in the same folder
+import { HoverBorderGradient } from '../uicomponents/HoverBorderGradient'; // Assuming you saved the gradient component in the same folder
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);

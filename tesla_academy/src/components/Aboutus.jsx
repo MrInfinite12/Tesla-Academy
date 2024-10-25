@@ -1,12 +1,10 @@
-
-
 import React from "react";
 
 const Aboutus = () => {
   return (
     <div className="bg-gray-100 text-gray-800">
       {/* Hero Section */} 
-      <section className="bg-indigo-600 text-white py-12">
+      <section className="bg-indigo-400 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome to Tesla Academy</h1>
           <p className="text-lg">
@@ -44,7 +42,7 @@ const Aboutus = () => {
           </div>
           <div className="w-full md:w-1/2">
             <img
-              src="https://source.unsplash.com/800x600/?technology,education"
+              src="https://images.ctfassets.net/9sy2a0egs6zh/5w0q0fWbGtmiSts6oIDJ5x/6746f0e6d562c0e8315d841eb4c85f87/Explore-illo.svg"
               alt="Vision"
               className="rounded-lg shadow-lg"
             />
@@ -88,19 +86,24 @@ const Aboutus = () => {
           <h3 className="text-3xl font-bold mb-8">Meet Our Team</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <TeamMember
-              name="Elon Musk"
-              title="Founder & CEO"
-              image="https://source.unsplash.com/200x200/?business"
+              name="Shubham"
+              title="Backend Devloper"
+              image="https://images.pexels.com/photos/4603239/pexels-photo-4603239.jpeg?cs=srgb&dl=pexels-anthony-raphael-4603239.jpg&fm=jpg"
             />
             <TeamMember
-              name="Jane Doe"
-              title="Head of Education"
-              image="https://source.unsplash.com/200x200/?teacher"
+              name="Dinesh"
+              title="Frontend Devloper"
+              image="https://images.pexels.com/photos/4603239/pexels-photo-4603239.jpeg?cs=srgb&dl=pexels-anthony-raphael-4603239.jpg&fm=jpg"
             />
             <TeamMember
-              name="John Smith"
-              title="Technology Expert"
-              image="https://source.unsplash.com/200x200/?engineer"
+              name="Niraj"
+              title="Frontend Devloper"
+              image="https://images.pexels.com/photos/4603239/pexels-photo-4603239.jpeg?cs=srgb&dl=pexels-anthony-raphael-4603239.jpg&fm=jpg"
+            />
+            <TeamMember
+              name="Kedar"
+              title="Website Analysist "
+              image="https://images.pexels.com/photos/4603239/pexels-photo-4603239.jpeg?cs=srgb&dl=pexels-anthony-raphael-4603239.jpg&fm=jpg"
             />
           </div>
         </div>
