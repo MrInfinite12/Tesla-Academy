@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center h-auto max-w-auto mx-auto px-4 text-white bg-white'>
+    <div className='flex justify-between items-center h-auto max-w-auto mx-auto px-4 text-white bg-white relative z-10'>
       <div className='flex items-center'>
         <Link to="/">
           <img src={logo} alt='logo' className='h-14 w-14 cursor-pointer' />
@@ -45,9 +45,16 @@ const NavBar = () => {
         {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
       </div>
 
-      <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r text-black font-bold bg-teal-100 ease-in-out duration-500' : 'fixed left-[-100%] '} >
+      {/* Mobile Menu */}
+      <div
+        className={
+          !nav
+            ? 'fixed left-0 top-0 w-[60%] h-full border-r text-black font-bold bg-teal-100 ease-in-out duration-500 z-50'
+            : 'fixed left-[-100%] z-50'
+        }
+      >
         <Link to="/">
-          <img src={logo} alt='logo' className='h-20 w-20' />
+          <img src={logo} alt='logo' className='h-20 w-20 m-4' />
         </Link>
         <ul className='p-4 uppercase'>
           <li className='p-4 border-b border-gray-600'><Link to="/login">Login</Link></li>
