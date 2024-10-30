@@ -1,16 +1,16 @@
 import React from "react";
-import Courses  from "../components/Courses";
+import Login  from "../components/Login";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
-const CoursesPage = () => {
+const LoginPage = () => {
     return (
         <div>
             <NavBar />
-            <Courses />
+            <Login />
             <Footer />
         </div>
     );
 };
 
-export default CoursesPage;
+export default LoginPage;
