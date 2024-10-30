@@ -1,10 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import Swal from "sweetalert2";
 
-const Contact= () => {
+
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_giydhim', 'template_b4edefl', form.current, {
+        publicKey: 'fNj7ASt-EA3WRpr08',
+      })
+      .then(
+        () => {
+          e.target.reset();
+          Swal.fire({
+            title: "Success!",
+            text: "Message sent successfully",
+            icon: "success"
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div className="flex items-center justify-center h-screen bg-cover"
-    style={{
+      style={{
         backgroundImage: "url('https://viditrade.com/wp-content/uploads/2022/04/login-pg-img.jpg')",
       }}
     >
@@ -27,7 +53,7 @@ const Contact= () => {
         {/* Right Side - Contact Form */}
         <div className="w-full md:w-1/2 p-4">
           <h2 className="text-xl font-bold mb-4">Get in Touch</h2>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1" htmlFor="name">
                 Name
@@ -35,6 +61,7 @@ const Contact= () => {
               <input
                 type="text"
                 placeholder='Enter Your Name'
+                name='user_name'
                 id="name"
                 className="w-full border border-gray-300 p-2 rounded"
                 required
@@ -48,6 +75,7 @@ const Contact= () => {
               <input
                 type="email"
                 placeholder='Enter Your Email'
+                name='user_email'
                 id="email"
                 className="w-full border border-gray-300 p-2 rounded"
                 required
@@ -61,6 +89,7 @@ const Contact= () => {
               <textarea
                 id="message"
                 className="w-full border border-gray-300 p-2 rounded"
+                name='message'
                 placeholder='Type your message here'
                 rows="4"
                 required

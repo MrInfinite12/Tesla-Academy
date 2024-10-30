@@ -20,7 +20,7 @@ const Login = () => {
     >
       <div className="w-full max-w-md p-8 space-y-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold text-center">Tesla Academy</h2>
-        
+
         <form onSubmit={handleLogin} className="mt-8 space-y-4">
           <div className="rounded-md shadow-sm">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -69,8 +69,8 @@ const Login = () => {
         </form>
 
         <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">Don't have an account? 
-            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"><Link to="/RegisterPage">Register Now</Link></a>
+          <p className="text-sm text-gray-600">Don't have an account?
+            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"><Link to="/register">Register Now</Link></a>
           </p>
         </div>
       </div>

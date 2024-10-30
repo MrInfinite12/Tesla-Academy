@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 const Register = () => {
@@ -21,7 +22,7 @@ const Register = () => {
     >
       <div className="w-full max-w-md p-8 space-y-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold text-center">Tesla Academy</h2>
-        
+
         <form onSubmit={handleLogin} className="mt-8 space-y-4">
           <div className="rounded-md shadow-sm">
             <label htmlFor="text" className="block text-sm font-medium text-gray-700">
@@ -38,7 +39,7 @@ const Register = () => {
                 onChange={(e) => setFirstName(e.target.value)}
                 className="w-1/2 px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="First Name"
-             />
+              />
 
               <input
                 id="lastName"
@@ -69,7 +70,7 @@ const Register = () => {
               className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
               placeholder="Enter your email"
             />
-          </div>          
+          </div>
 
           <div className="mt-4">
             <label htmlFor="createPassword" className="block text-sm font-medium text-gray-700">
@@ -94,6 +95,12 @@ const Register = () => {
             Register
           </button>
         </form>
+
+        <div className="mt-6 text-center">
+          <p className="text-sm text-gray-600">Already have an account?
+            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"><Link to="/LoginPage">Login</Link></a>
+          </p>
+        </div>
 
       </div>
     </div>

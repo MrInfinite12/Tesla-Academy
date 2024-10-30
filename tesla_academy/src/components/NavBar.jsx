@@ -23,10 +23,22 @@ const NavBar = () => {
       </div>
 
       <ul className='hidden md:flex text-black'>
+<<<<<<< HEAD
+        <li className='p-4'>Courses</li>
+        <li className='p-4'>Forum</li>
+<<<<<<< Updated upstream
+        <li className='p-4'>About Us</li>
+        <li className='p-4'>Contact</li>
+=======
+        <li className='p-4'><Link to="/about">About Us</Link></li>
+        <li className='p-4'><Link to="/contact">Contact</Link></li>
+>>>>>>> Stashed changes
+=======
         <li className='p-4'><Link to="/courses">Courses</Link></li>
         <li className='p-4'><Link to="/forum">Forum</Link></li>
         <li className='p-4'><Link to="/aboutus">About Us</Link></li>
         <li className='p-4'><Link to="/contact">Contact</Link></li>
+>>>>>>> f9f9e9e931274122b976e5f175d778145d977934
       </ul>
 
       <Link to="/login">
@@ -57,11 +69,25 @@ const NavBar = () => {
           <img src={logo} alt='logo' className='h-20 w-20 m-4' />
         </Link>
         <ul className='p-4 uppercase'>
+<<<<<<< HEAD
+          <li className='p-4 border-b border-gray-600'>Login/Register</li>
+          <li className='p-4 border-b border-gray-600'>Courses</li>
+          <li className='p-4 border-b border-gray-600'>Forum</li>
+<<<<<<< Updated upstream
+          <li className='p-4 border-b border-gray-600'>About Us</li>
+          <li className='p-4 border-b border-gray-600'>Contact</li>
+=======
+          <li className='p-4 border-b border-gray-600'><Link to="/about">About Us</Link></li>
+          <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
+
+>>>>>>> Stashed changes
+=======
           <li className='p-4 border-b border-gray-600'><Link to="/login">Login</Link></li>
           <li className='p-4 border-b border-gray-600'><Link to="/courses">Courses</Link></li>
           <li className='p-4 border-b border-gray-600'><Link to="/forum">Forum</Link></li>
           <li className='p-4 border-b border-gray-600'><Link to="/aboutus">About Us</Link></li>
           <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
+>>>>>>> f9f9e9e931274122b976e5f175d778145d977934
         </ul>
       </div>
     </div>
